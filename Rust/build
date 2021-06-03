@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+ROOT_DIR=$(pwd)
+
+compile_rs() {
+	cd $ROOT_DIR/$1 && rustc main.rs
+}
+
+compile_rs factorial
+compile_rs hello_world
